@@ -1,5 +1,7 @@
-// eslint-disable-next-line import/prefer-default-export
-export const hello = (event, context, callback) => {
+import parse from './src/parse'
+
+export const hello = async (event, context, callback) => {
+  console.log(await parse())
   const p = new Promise((resolve) => {
     resolve('success');
   });

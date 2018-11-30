@@ -7,6 +7,3 @@ jspm_packages
 
 # Webpack directories
 .webpack
-
-# testing file for some local debugging
-debug.js
