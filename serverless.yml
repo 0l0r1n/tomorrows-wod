@@ -15,5 +15,4 @@ functions:
   execute:
     handler: src/handler.execute
     events:
-      - http:
-          method: post
+      - schedule: cron(35 19 * * ?)
