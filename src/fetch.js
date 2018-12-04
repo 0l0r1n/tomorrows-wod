@@ -3,7 +3,7 @@ import isTomorrow from 'date-fns/is_tomorrow'
 
 import formatPost from './format-post'
 
-const defaultMessageNoPost = 'Tomorrows\'s workout has not been posted. No cherry picking for you today 🍒.'
+const defaultMessageBodyNoPost = 'Tomorrows\'s workout has not been posted. No cherry picking for you today 🍒.'
 
 export default async () => {
     const parser = new Parser();
@@ -14,5 +14,5 @@ export default async () => {
     if (isTomorrow(latestPost.isoDate)) 
         return formatPost(latestPost)
     else 
-        return defaultMessageNoPost
+        return defaultMessageBodyNoPost
 }

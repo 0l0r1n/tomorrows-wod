@@ -1,5 +1,5 @@
+import h2p from 'html2plaintext'
+
 export default post => {
-    console.log(`Post before formating ${post}`)
-    console.log(`Post after formating ${post}`)
-    return post
+    return h2p(post.content)
 }
